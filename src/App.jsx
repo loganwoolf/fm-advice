@@ -1,3 +1,6 @@
+import { useState, useEffect } from 'react'
+import axios from 'axios'
+
 import './App.css'
 
 import { ReactComponent as Separator } from './images/pattern-divider-desktop.svg'
@@ -17,21 +20,32 @@ function Body(props) {
 }
 
 function Button(props) {
+  const { getQuote } = props
+
   return (
-    <button>
+    <button onClick={getQuote}>
       <Icon />
     </button>
   )
 }
 
-function App() {
+export default function App() {
+  const [quote, setQuote] = useState('')
+
+  const getQuote = () => {
+    axios
+      .get('https://api.adviceslip.com/advice')
+      .then(res => console.log(res.data.slip) || setQuote(res.data.slip))
+      .catch(err => console.log(err.message))
+  }
+
+  useEffect(() => getQuote(), [])
+
   return (
     <div className="App">
-      <Body quoteNum="117" quoteBody="It is easy to sit up and take notice, what's difficult is getting up and taking action." />
+      <Body quoteNum={quote.id} quoteBody={quote.advice} />
       <Separator />
-      <Button />
+      <Button getQuote={getQuote} />
     </div>
   )
 }
-
-export default App
