@@ -33,9 +33,11 @@ export default function App() {
   const [quote, setQuote] = useState('')
 
   const getQuote = () => {
+    // slightly modify URL so that Firefox doesn't use cached API response
+    const appStr = new Date().getTime()
     axios
-      .get('https://api.adviceslip.com/advice')
-      .then(res => console.log(res.data.slip) || setQuote(res.data.slip))
+      .get(`https://api.adviceslip.com/advice?t=${appStr}`)
+      .then(res => setQuote(res.data.slip))
       .catch(err => console.log(err.message))
   }
 
