@@ -20,10 +20,24 @@ function Body(props) {
 }
 
 function Button(props) {
-  const { getQuote } = props
+  const { getQuote } = props;
+
+  const addHoverEffect = (e) => {
+    e.target.classList.add("button-hover");
+  };
+  const removeHoverEffect = (e) => {
+    e.target.classList.remove("button-hover");
+  };
+  const handleClick = (e) => {
+    getQuote()
+  }
 
   return (
-    <button onClick={getQuote}>
+    <button
+      onMouseEnter={addHoverEffect}
+      onMouseLeave={removeHoverEffect}
+      onClick={handleClick}
+    >
       <Icon />
     </button>
   )
