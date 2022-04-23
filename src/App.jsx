@@ -1,13 +1,12 @@
-import { useState, useEffect } from 'react'
-import axios from 'axios'
+import { useState, useEffect } from "react";
+import axios from "axios";
 
-import './App.css'
+import "./App.css";
 
-import { ReactComponent as Separator } from './images/pattern-divider-desktop.svg'
-import { ReactComponent as Icon } from './images/icon-dice.svg'
+import { ReactComponent as Icon } from "./images/icon-dice.svg";
 
 function Body(props) {
-  const { quoteNum, quoteBody } = props
+  const { quoteNum, quoteBody } = props;
 
   return (
     <>
@@ -16,7 +15,7 @@ function Body(props) {
       </h2>
       <p>"{quoteBody}"</p>
     </>
-  )
+  );
 }
 
 function Button(props) {
@@ -40,22 +39,22 @@ function Button(props) {
     >
       <Icon />
     </button>
-  )
+  );
 }
 
 export default function App() {
-  const [quote, setQuote] = useState('')
+  const [quote, setQuote] = useState("");
 
   const getQuote = () => {
     // slightly modify URL so that Firefox doesn't use cached API response
-    const appStr = new Date().getTime()
+    const appStr = new Date().getTime();
     axios
       .get(`https://api.adviceslip.com/advice?t=${appStr}`)
-      .then(res => setQuote(res.data.slip))
-      .catch(err => console.log(err.message))
-  }
+      .then((res) => setQuote(res.data.slip))
+      .catch((err) => console.log(err.message));
+  };
 
-  useEffect(() => getQuote(), [])
+  useEffect(() => getQuote(), []);
 
   return (
     <div className="App">
@@ -63,5 +62,5 @@ export default function App() {
       <div className="separator"></div>
       <Button getQuote={getQuote} />
     </div>
-  )
+  );
 }

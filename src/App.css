@@ -1,14 +1,11 @@
 @import-normalize;
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap");
 
 :root {
   --light-cyan: hsl(193, 38%, 86%);
   --neon-green: hsl(150, 100%, 66%);
   --grayish-blue: hsl(217, 19%, 38%);
   --dark-grayish-blue: hsl(217, 19%, 24%);
-
 }
 
 body {
@@ -21,7 +18,7 @@ body {
 }
 
 .App {
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   background-color: var(--grayish-blue);
   display: flex;
   flex-direction: column;
@@ -39,7 +36,7 @@ h2 {
   font-size: var(--size);
   color: var(--neon-green);
   text-transform: uppercase;
-  letter-spacing: calc(var(--size)/4);
+  letter-spacing: calc(var(--size) / 4);
   user-select: none;
 }
 
@@ -50,11 +47,10 @@ p {
   line-height: 2.3rem;
   margin-top: 1rem;
   margin-bottom: 2.5rem;
-  min-height: 6.9rem;
 }
 
 .separator {
-  background: url('./images/pattern-divider-desktop.svg') no-repeat center;
+  background: url("./images/pattern-divider-desktop.svg") no-repeat center;
   height: 1rem;
   width: 100%;
 }
@@ -69,7 +65,7 @@ button {
   border: unset;
   height: var(--size);
   width: var(--size);
-  border-radius: calc(var(--size)/2);
+  border-radius: calc(var(--size) / 2);
   position: relative;
   bottom: -2rem;
   cursor: pointer;
