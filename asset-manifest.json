@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/fm-advice/static/css/main.3313e550.css",
-    "main.js": "/fm-advice/static/js/main.b49c93c8.js",
+    "main.css": "/fm-advice/static/css/main.c96209f3.css",
+    "main.js": "/fm-advice/static/js/main.c8a102e6.js",
     "static/js/787.8d627254.chunk.js": "/fm-advice/static/js/787.8d627254.chunk.js",
     "index.html": "/fm-advice/index.html",
     "static/media/icon-dice.svg": "/fm-advice/static/media/icon-dice.08691e4c24c11b5ba564e06b1f6bcbf3.svg",
-    "static/media/pattern-divider-desktop.svg": "/fm-advice/static/media/pattern-divider-desktop.ed9685263f6b47d21c8848f7d8bdd10e.svg",
-    "main.3313e550.css.map": "/fm-advice/static/css/main.3313e550.css.map",
-    "main.b49c93c8.js.map": "/fm-advice/static/js/main.b49c93c8.js.map",
+    "static/media/pattern-divider-desktop.svg": "/fm-advice/static/media/pattern-divider-desktop.3c420011d0d22568f49b.svg",
+    "main.c96209f3.css.map": "/fm-advice/static/css/main.c96209f3.css.map",
+    "main.c8a102e6.js.map": "/fm-advice/static/js/main.c8a102e6.js.map",
     "787.8d627254.chunk.js.map": "/fm-advice/static/js/787.8d627254.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3313e550.css",
-    "static/js/main.b49c93c8.js"
+    "static/css/main.c96209f3.css",
+    "static/js/main.c8a102e6.js"
   ]
 }
