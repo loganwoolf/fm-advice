@@ -46,7 +46,7 @@ export default function App() {
   return (
     <div className="App">
       <Body quoteNum={quote.id} quoteBody={quote.advice} />
-      <Separator />
+      <div className="separator"></div>
       <Button getQuote={getQuote} />
     </div>
   )

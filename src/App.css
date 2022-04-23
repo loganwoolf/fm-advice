@@ -52,9 +52,10 @@ p {
   min-height: 6.9rem;
 }
 
-g > path {
-  fill:hsl(193, 38%, 86%);
-  opacity: 0.3;
+.separator {
+  background: url('./images/pattern-divider-desktop.svg') no-repeat center;
+  height: 1rem;
+  width: 100%;
 }
 
 button {
