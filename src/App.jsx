@@ -3,44 +3,8 @@ import axios from "axios";
 
 import "./App.css";
 
-import { ReactComponent as Icon } from "./images/icon-dice.svg";
-
-function Body(props) {
-  const { quoteNum, quoteBody } = props;
-
-  return (
-    <>
-      <h2>
-        Advice #<span>{quoteNum}</span>
-      </h2>
-      <p>"{quoteBody}"</p>
-    </>
-  );
-}
-
-function Button(props) {
-  const { getQuote } = props;
-
-  const addHoverEffect = (e) => {
-    e.target.classList.add("button-hover");
-  };
-  const removeHoverEffect = (e) => {
-    e.target.classList.remove("button-hover");
-  };
-  const handleClick = (e) => {
-    getQuote()
-  }
-
-  return (
-    <button
-      onMouseEnter={addHoverEffect}
-      onMouseLeave={removeHoverEffect}
-      onClick={handleClick}
-    >
-      <Icon />
-    </button>
-  );
-}
+import Body from "./components/Body";
+import Button from "./components/Button";
 
 export default function App() {
   const [quote, setQuote] = useState("");
