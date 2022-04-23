@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [https://loganwoolf.github.io/fm-advice/](https://loganwoolf.github.io/fm-advice/)
+- Frontend Mentor Solution URL: [https://www.frontendmentor.io/solutions/advice-generator-in-react-S1ZKd7bHq](https://www.frontendmentor.io/solutions/advice-generator-in-react-S1ZKd7bHq)
 
 ## My process
 
